@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome {
+    background-color: black;
+    color: white;
+    height: 59px;
+    display: flex;
+    text-decoration: underline;
+}
+
+.welcome > a {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.welcome>a:hover {
+    color: white;
+}
+
+.section-1 {
+    background-image: url(image/BackgroundImage.webp);
+    width: 100%;
+    height: 725px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.Logo, .info, .become {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Logo {
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+.info > a, .become > a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.become > a > img {
+    color: white;
+    width: 16px;
+}
+
+.Logo > img {
+    width: 30px;
+    height: 32px;
+}
+
+.icon {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.profile {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77px;
+    height: 42px;
+    border-radius: 110px;
+    padding: 1px 6px;
+    border: none;
+}
+
+.profile > img:nth-child(1) {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    align-self: center;
+    margin-top: 4px;
+}
+.profile > img:nth-child(2) {
+    height: 29px;
+    margin-right: 6px;
+    align-self: center;
+}
+
+.info > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.become>a {
+    /* border: 1px solid; */
+    border-radius: 110px;
+}
+.become > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-container {
+    display: flex;
+    background-color: white;
+    height: 66px;
+    justify-content: space-between;
+    align-items: center;
+    width: 850px;
+    border-radius: 33px;
+    padding: 0px 0px 0px 0px;
+    align-self: center;
+
+}
+
+.search {
+    width: 100px;
+    flex-grow: 1;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 30px;
+    /* background-color: red; */
+}
+
+.search:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.crop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.search:nth-child(4) > .crop {
+    border: none;
+}
+.search:nth-child(1) {
+    width: 100px;
+    flex-grow: 2;
+    padding-left: 30px;
+}
+
+.crop:nth-child(4) {
+    border: none;
+}
+
+.crop > input {
+    font-size: small;
+    border: none;
+    background-color: transparent;
+    width: 80%;
+}
+
+.crop>input:hover {
+    cursor: text;
+}
+
+.search-logo {
+    background-color: #fa215b;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 6px;
+}
+.search-logo > img {
+    width: 16px;
+    height: 16px;
+}
+
+.explore > h1 {
+    margin: 0px;
+}
+
+.explore {
+    padding-top: 200px;
+    width: 400px;
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: bold;
+}
+.explore > button {
+    width: 145px;
+    height: 30px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+}
+
+.card-container,.accom-container, .accom-section, .unique-section, .containers {
+    margin: 50px 0px 50px 0px;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    
+}
+
+.card > a {
+    margin-top: 15px;
+    padding-right: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card > a > img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-detail {
+    margin-left: 20px;
+}
+h3 {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+.card-detail > p:nth-child(1), .accom-container > a > p {
+    font-weight: bold;
+}
+
+.card-detail > p {
+    margin: 0px; 
+}
+.accom-section {
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.accom-container {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+.accom-container > a {
+    width: 25%;
+    padding-right: 13px;
+    margin: 0px;
+    color: black;
+}
+.accom-container > a > img, .unique-container>a>img {
+    width: 100%;
+    border-radius: 10px;
+}
+.accom-container>a>p {
+    margin: 0px;
+}
+.unique-background {
+    background-color: black;
+}
+.unique-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 50px 0px;
+}
+p {
+    margin: 0;
+}
+.unique-container > a {
+    color: white;
+    padding-right: 13px;
+}
+.unique-container {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.community-vackground {
+    background-color: none;
+}
+.community>a {
+    color: black;
+}
+.community {
+    color: black;
+}
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+h5 {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    background-color: #F7F7F7;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer {
+    margin: 26px 0px;
+    padding-right: 13px;
+    width: 100%;
+}
+.footer-top {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 26px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.item > a {
+    margin-top: 10px;
+    color: black;
+}
+a:hover {
+    cursor: pointer;
+}
+.footer-bottom {
+    margin: 10px;
+    font-size: 14px;
+    display: flex;
+}
+.copy {
+    width: 50%;
+}
+
+.copy > div > a {
+    color: black;
+}
+
+.footer-bottom a {
+    color: black;
+}
+.footer-bottom img {
+    width: 16px;
+}
+.flex1 {
+    width: 25%;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 1010px) {
+    .search-container {
+            align-self: flex-start;
+        }
+}
