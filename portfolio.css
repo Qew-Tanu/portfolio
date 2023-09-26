@@ -1,18 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mooli','Roboto',sans-serif;
 }
 
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    width: 1440px;
 }
+.row {
+    display: flex;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center; */
+}
+
 nav {
     position: fixed;
     display: flex;
@@ -22,6 +42,7 @@ nav {
     right: 0;
     height: 80px;
     background-color: rgb(1, 37, 66);
+    width: 100%;
 }
 .Logo, .info {
     display: flex;
@@ -38,7 +59,11 @@ nav {
 
 
 .section-1 {
-    background-color: rgba(0, 225, 255, 0.2);
+    background-image: url('image/Digital31.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: rgba(w, 0, 0, 0.61); */
     width: 100%;
     height: 725px;
     display: flex;
@@ -60,48 +85,93 @@ a {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.imageProfile > img {
+.Qewpic {
     height: 100%;
+    /* border: solid black; */
+}
+.Qewname {
+    height: 50%;
+    /* opacity: 70%; */
     /* border: solid black; */
 }
 
 #AboutMe {
     width: 100%;
-    height: 500px;
-    border: solid black;
-    padding: 50px;
+    /* height: 500px; */
+    /* border: solid black; */
+    padding: 0px 0px;
     display: flex;
     flex-wrap: nowrap;
-    
 }
 
 .aboutLeft  {
-    flex-basis: 1;
-    width: 30%;
+    flex: 1;
+    /* padding: 10px; */
+    margin: 50px opx;
+    /* width: 30%; */
+    /* background-color: red; */
+    
     /* background-color: red; */
 }
+.aboutLeft > .detailbox {
+    background-image: url(image/Gear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 10px 20px 0px;
+}
+/* .image {
+    width: 100%;
+} */
 .aboutRight {
-    width: 70%;
-    flex-basis: 2;
-    /* background-color: red; */
-    padding: 20px;
+    /* width: 70%; */
+    flex: 1.5;
+    background-color: gba(128, 128, 128, 0.281);
+    /* padding: 10px; */
+    margin: 20px 0px 20px 10px;
+    color: black;
+    background-color: rgba(3, 3, 3, 0.281);
+    
 }
-
+.aboutRight > .row {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(3, 3, 3, 0.281);
+}
+/* .detailbox:nth-child(1) {
+} */
 .detailbox {
-    width: 50%;
+    /* width: 50%; */
     margin: 10px;
     font-size: 18px;
-    
-    
+    flex: 1;
 }
 .detailbox p {
-    text-indent: 10%;
+    text-indent: 50px;
+    /* letter-spacing: 0.1rem; */
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+.detailbox h1 {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .detailbox span {
     font-size: 22px;
     font-weight: bold;
-    color: blue;
+    color: white;
     font-style: italic;
+}
+.detailbox .newLine {
+    margin: 10px;
+    font-size: 18px;
+    color: black;
+}
+li {
+    line-height: 30px;
 }
